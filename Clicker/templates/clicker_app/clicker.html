@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block content%}
+   <div class="container">
+        <h1 class="title">Clicker</h1>
+
+        <div class="input-box">
+            <input type="text" class="input-counter" value="0" name="counter" id="counter">
+        </div>
+
+        <div class="btns">
+            <button class="btn-plus" type="button">+</button>
+            <button class="btn-minus" type="button">-</button>
+        </div>
+    </div>
+
+<link rel="stylesheet" href="{%static 'clicker_app/css/clicker.css'%}">
+<script type="text/javascript" src="{%static 'clicker_app/js/clicker.js'%}"></script>
+{%endblock%}
